@@ -41,6 +41,67 @@
     background-image: linear-gradient(rgb(255, 187, 0),rgb(252, 44, 17) );
     cursor: pointer;
 }
+/* dream area */
+
+#dream-area{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+.d-h_2{
+    font-size: 1.7rem;
+}
+.h-padd{
+    /* padding-top: 100px; */
+    height: 500px;
+}
+
+/* experiance */
+#experiance{
+    height: 600px;
+    padding: 60px 40px ;
+}
+.ex-head{
+    font-size: 2rem;
+}
+
+.ex-box{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px ;
+}
+
+.box-wid{
+    width: 30vw;
+    box-shadow: 10px 0px 30px  black;
+    padding: 20px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+#ex-box_1{
+    border-left: 6px solid;
+    border-image: linear-gradient(crimson,orange);
+    border-image-slice: 1;
+}
+#ex-box_2{
+    border-left: 6px solid;
+    border-image: linear-gradient(rgb(0, 60, 255),cyan);
+    border-image-slice: 1;
+}
+
+.ex-head_1{
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+.ex-p{
+    text-align: justify;
+}
+
+
+
+/* media quarys */
 @media screen and (max-width: 650px){
     #head{
         flex-direction: column-reverse;
@@ -74,10 +135,14 @@
         padding-top: 10px;
     }
     .img-2{
-        /* margin-top: 20px; */
-        /* padding-top: 50px; */
         position: relative;
         top: 50px;
+    }
+    .box-wid{
+        position: relative;
+        right: 40px;
+        box-shadow: 10px 5px 30px  black;
+
     }
 }
 
@@ -86,31 +151,36 @@
         padding-top: 80px;
         padding-left: 10px;
     }
+    .ex-box{
+        flex-direction: column;
+    }
+    .box-wid{
+        width: 75vw;
+        margin-bottom: 50px;
+    }
+    #dream-area{
+        margin-bottom: 100px;
+    }
 }    
 @media screen and (max-width: 318px) {
     #head{
         margin-bottom: 150px;
     }
+    #dream-area{
+        margin-bottom: 150px;
+        
+    }
+}
+@media screen and (max-width: 342px) {
+   
+    #dream-area{
+        margin-bottom: 150px;
+        
+    }
 }
     
 
 
-
-/* dream area */
-
-#dream-area{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 50px;
-}
-.d-h_2{
-    font-size: 1.7rem;
-}
-.h-padd{
-    /* padding-top: 100px; */
-    height: 500px;
-}
 
 
     
