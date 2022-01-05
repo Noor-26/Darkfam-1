@@ -60,6 +60,7 @@
 /* experiance */
 #experiance{
     height: 600px;
+    
     padding: 60px 40px ;
 }
 .ex-head{
@@ -99,9 +100,72 @@
     text-align: justify;
 }
 
+/* skils */
+#skils{
+    height: 600px;
+    width: 100%;
+    /* border: 2px solid black; */
 
+
+}
+.s-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+    text-align: center;
+}
+.s-head{
+    font-size: 2.2rem;
+    padding: 40px 40px;
+    font-family: 'Pushster', cursive;
+    
+}
+.s-head_1{
+    text-transform: uppercase;
+    color: red;
+    font-family: 'Pushster', cursive;
+
+}
+.git{
+    border-radius: 50%;
+}
+.s-text{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+    
+    
+}
 
 /* media quarys */
+
+@media screen and (max-width:800px) {
+    .h-padd{
+        padding-top: 80px;
+        padding-left: 10px;
+    }
+    .ex-box{
+        flex-direction: column;
+    }
+    .box-wid{
+        width: 75vw;
+        margin-bottom: 50px;
+    }
+    #dream-area{
+        margin-bottom: 100px;
+    }
+}    
+@media screen and (max-width: 850px) {
+    #experiance{
+        margin-bottom: 100px;
+    }   
+    .s-img{
+        width: 20vw;
+    }
+ 
+}
 @media screen and (max-width: 650px){
     #head{
         flex-direction: column-reverse;
@@ -126,6 +190,26 @@
         padding-top: 10px;
         padding-left: 10px;
     }
+    #skils{
+        height: 1000px;
+        padding-top: 50px;
+    }
+    .s-container{
+        flex-direction: column;
+        height: 900px;
+        width: 100vw;
+        
+        /* border: 2px solid; */
+    }
+    
+    #experiance{
+        margin-bottom: 170px;
+        position: relative;
+        bottom: 100px;
+    }
+    .s-img{
+        width: 30vw;
+    }
 }
 @media screen and (max-width: 563px) {
     .h-text{
@@ -144,24 +228,62 @@
         box-shadow: 10px 5px 30px  black;
 
     }
+
+}
+@media screen and (max-width:518px){
+    #experiance{
+        margin-bottom: 200px;
+    }
+    #skils{
+        padding-top: 100px;
+        position: relative;
+        top: 50px;
+    }
+    .s-img{
+        width: 40vw;
+    }
+} 
+
+@media screen and (max-width: 365px){
+    #experiance{
+        bottom: 50px;
+    }
+    #skils{
+        padding-top: 200px;
+    }
 }
 
-@media screen and (max-width:800px) {
-    .h-padd{
-        padding-top: 80px;
-        padding-left: 10px;
-    }
-    .ex-box{
-        flex-direction: column;
-    }
-    .box-wid{
-        width: 75vw;
-        margin-bottom: 50px;
-    }
+
+@media screen and (max-width: 342px) {
+   
     #dream-area{
-        margin-bottom: 100px;
+        margin-bottom: 150px;
+        
     }
-}    
+    #skils{
+        top: 100px;
+    }
+}
+@media screen and (max-width: 350px) {
+   
+    #dream-area{
+        margin-bottom: 150px;
+        
+    }
+    #skils{
+        top: 100px;
+    }
+}
+@media screen and (max-width: 330px) {
+   
+    #dream-area{
+        margin-bottom: 180px;
+        
+    }
+    #skils{
+        top: 130px;
+    }
+}
 @media screen and (max-width: 318px) {
     #head{
         margin-bottom: 150px;
@@ -170,17 +292,9 @@
         margin-bottom: 150px;
         
     }
-}
-@media screen and (max-width: 342px) {
-   
-    #dream-area{
-        margin-bottom: 150px;
-        
+    #skils{
+        top: 200px;
     }
 }
     
 
-
-
-
-    
