@@ -63,6 +63,7 @@
     }
     .h-padd{
         padding-top: 10px;
+        padding-left: 10px;
     }
 }
 @media screen and (max-width: 563px) {
@@ -83,6 +84,7 @@
 @media screen and (max-width:800px) {
     .h-padd{
         padding-top: 80px;
+        padding-left: 10px;
     }
 }    
 @media screen and (max-width: 318px) {
@@ -94,7 +96,7 @@
 
 
 
-/* skils */
+/* dream area */
 
 #dream-area{
     display: flex;
