@@ -3,15 +3,14 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
-body{
-    /* background-color: black; */
-}
+
 /* header */
 
 #head{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 100px;
 }
 .img-wid{
     width: 45vw;
@@ -22,6 +21,7 @@ body{
     height: 500px;
     width: 50vw;
     padding: 20px;
+    /* border: 2px solid red; */
 }
 .h-text{
     font-size: 2rem;
@@ -50,14 +50,65 @@ body{
     .h-box_1{
         padding: 0;
         width: 80vw;
+        /* border: 2px solid red */
     }
     .img-wid{
         width: 100vw;
+    
+    }
+    #dream-area{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .h-padd{
+        padding-top: 10px;
     }
 }
 @media screen and (max-width: 563px) {
     .h-text{
         font-size: 1.5rem;
     }
+    .h-padd{
+        padding-top: 10px;
+    }
+    .img-2{
+        /* margin-top: 20px; */
+        /* padding-top: 50px; */
+        position: relative;
+        top: 50px;
+    }
 }
+
+@media screen and (max-width:800px) {
+    .h-padd{
+        padding-top: 80px;
+    }
+}    
+@media screen and (max-width: 318px) {
+    #head{
+        margin-bottom: 150px;
+    }
+}
+    
+
+
+
+/* skils */
+
+#dream-area{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+.d-h_2{
+    font-size: 1.7rem;
+}
+.h-padd{
+    /* padding-top: 100px; */
+    height: 500px;
+}
+
+
     
