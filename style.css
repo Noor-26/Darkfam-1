@@ -93,6 +93,12 @@
     font-size: 1.7rem;
     text-transform: capitalize;
 }
+.ex-head_2{
+    color: rgb(252, 92, 0);
+}
+.ex-c{
+    color: #00fff3;
+}
 .ex-p{
     text-align: justify;
 }
@@ -232,6 +238,15 @@
     }
     .skils-t{
         margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .h-text{
+        font-size: 1.6rem;
+    }
+    .h-p{
+        font-size: 14px;
     }
 }
 
