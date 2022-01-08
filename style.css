@@ -2,6 +2,7 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 /* header */
@@ -10,14 +11,15 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    height: max-content;
 }
 .img-wid{
     width: 45vw;
     padding: 20px;
 }
 .h-box_1{
-    height: 500px;
+    height: max-content;
     width: 50vw;
     padding: 20px;
 }
@@ -37,7 +39,7 @@
     margin: 15px 0;
     font-weight: bold;
     letter-spacing: 1px;
-    background-image: linear-gradient(rgb(255, 187, 0),rgb(252, 44, 17) );
+    background-image: linear-gradient(45deg,rgb(252, 44, 17),rgb(255, 187, 0) );
     cursor: pointer;
 }
 /* dream area */
@@ -51,15 +53,16 @@
 .d-h_2{
     font-size: 1.7rem;
 }
-.h-padd{
-    height: 500px;
+.h-padd{ 
+     height: max-content;
+     padding-bottom: 20px;
 }
 
 /* experiance */
 
 #experiance{
-    height: 600px;
-    padding: 60px 40px ;
+    height: max-content;
+    padding: 50px 40px ;
 }
 .ex-head{
     font-size: 2rem;
@@ -131,25 +134,30 @@
 
 @media screen and (max-width:800px) {
     .h-padd{
-        padding-top: 80px;
         padding-left: 10px;
+    }
+    #dream-area{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
     }
     .ex-box{
         flex-direction: column;
     }
     .box-wid{
         width: 75vw;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
+  #experiance{
+      margin: 10px ;
+  }
     #dream-area{
         margin-bottom: 100px;
     }
 }    
 
 @media screen and (max-width: 850px) {
-    #experiance{
-        margin-bottom: 100px;
-    }   
+ 
     .s-img{
         width: 20vw;
     }
@@ -172,128 +180,61 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin: 0;
     }
     .h-padd{
         padding-top: 20px;
         padding-left: 10px;
     }
     #skils{
-        height: 1000px;
-        padding-top: 50px;
-        position: relative;
-        bottom: 180px;
+        height: max-content;
         text-align: center;
+        margin: 0;
+    }
+    .ex-box{
+        padding: 20px 0; 
+    }
+    .box-wid{
+        box-shadow: 10px 5px 20px 0px black;
+    }
+    .ex-p{
+        font-size: 14px;
+    }
+    .ex-head_2{
+        font-size: 12px;
+        padding: 5px 0;
+    }
+    .ex-head_1{
+        font-size: 25px;
     }
     .s-head{
         font-size: 2.5rem;
+        padding-top: 20px;
     }
- 
+    .ex-head{
+        margin-bottom: 15px;
+    }
     .s-container{
         flex-direction: column;
-        height: 1000px;
-        width: 100vw;
+        height: max-content;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
-    
     #experiance{
-        margin-bottom: 170px;
-        position: relative;
-        bottom: 100px;
+        height: max-content;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        padding-top: 0;
     }
     .s-img{
         width: 30vw;
     }
-}
-@media screen and (max-width: 563px) {
-    .h-text{
-        font-size: 1.5rem;
-    }
-    .h-padd{
-        padding-top: 35px;
-    }
-    #dream-area{
-        position: relative;
-        bottom: 200px;
-
-    }
-    #experiance{
-        position: relative;
-        bottom: 350px;
-    }
-    .img-2{
-        position: relative;
-        top: 50px;
-    }
-    .box-wid{
-        position: relative;
-        right: 40px;
-        box-shadow: 10px 5px 30px  black;
-
-    }
-    #skils{
-        position: relative;
-        bottom: 400px;
-        height: 800px;
-    }
-
-}
-@media screen and (max-width:518px){
-    
-    #skils{
-        padding-top: 180px;
-        position: relative;
-    }
-    .s-img{
-        width: 40vw;
-    }
-} 
-@media screen and (max-width: 430px) {
-    #dream-area{
-        position: relative;
-        bottom: 150px;
-    }
-    #experiance{
-        position: relative;
-        bottom: 250px;
-    }
-    #skils{
-        position: relative;
-        bottom: 300px;
-        height: 800px;
+    .skils-t{
+        margin: 20px 0;
     }
 }
 
-@media screen and (max-width: 385px){
-    
-    #skils{
-        position: relative;
-        bottom: 180px;
-        height: 800px;
-    }
-}
-
-@media screen and (max-width: 370px) {
-   
-    #dream-area{
-        bottom: 80px;
-    }
-    #experiance{
-        position: relative;
-        bottom: 180px;
-    }
-    #skils{
-        bottom: 80px;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    #experiance{
-        position: relative;
-        bottom: 120px;
-    }
-    #skils{
-        bottom: -25px;
-    }
-}
 
     
 
